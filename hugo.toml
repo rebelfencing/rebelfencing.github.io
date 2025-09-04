@@ -14,7 +14,7 @@ pluralizelisttitles = false
 [services]
     # Enable Google Analytics by entering your tracking code
     [services.googleAnalytics]
-        id = ""
+        id = "G-F99L19BERS"
 
 # Define the number of posts per page
 [pagination]

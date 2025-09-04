@@ -6,7 +6,7 @@ languageCode = "pl"
 defaultContentLanguage = "pl"
 
 # number of words of summarized post content (default 70)
-summaryLength = 70
+summaryLength = 10
 
 # not pluralize title pages by default
 pluralizelisttitles = false
@@ -45,8 +45,31 @@ pluralizelisttitles = false
 
 [[menu.main]]
     name       = "Wydarzenia"
-    url        = "/wydarzenia/"
+    url        = ""
     weight     = 5
+    identifier = "menu.events"
+
+[[menu.main]]
+    name       = "Lista wydarzeń"
+    url        = "/wydarzenia/"
+    weight     = 6
+    identifier = "menu.event_list"
+    parent     = "menu.events"
+
+
+[[menu.main]]
+    name       = "Swordmaster Cup"
+    url        = "/swordmasters_cup/"
+    identifier = "menu.swordmaster_cup"
+    parent     = "menu.events"
+    weight     = 7
+
+[[menu.main]]
+    name       = "Blog"
+    url        = "/blog/"
+    identifier = "section.ap-blog"
+    weight     = 9
+    post = 1
 
 
 # Top bar social links menu
@@ -71,9 +94,12 @@ pluralizelisttitles = false
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
+
+    viewMorePostLink = "/blog/"
+    mainSections = ["blog"]
+
     author = "Rebel Fencing"
     defaultKeywords = ["szermierka klasyczna", "Wrocław", "Rebel Fencing"]
-    mainSections = []
     defaultDescription = "Rebel Fencing – szkoła szermierki klasycznej we Wrocławiu"
 
     # Social media
@@ -126,7 +152,7 @@ pluralizelisttitles = false
     # Format dates with Go's time formatting
     date_format = "January 2, 2006"
 
-    dropdown_mouse_over = true
+    dropdown_mouse_over = false
 
     disabled_logo = false
     logo_text = "REBEL FENCING"
@@ -143,6 +169,10 @@ pluralizelisttitles = false
         <strong>Polska</strong>
       </p>
       """
+
+[permalinks]
+    blog = "/blog/:year/:month/:day/:contentbasename/"
+
 
 # Enable or disable top bar with social icons
 [params.topbar]
@@ -181,6 +211,10 @@ pluralizelisttitles = false
 
 [params.recent_posts]
     enable = true
+    title = "Ostatnie wydarzenia"
+    subtitle = "Ostatnie i nadchodzące wydarzenia z naszej szkoły"
+    hide_summary = false
+
 
 [params.footer.recent_posts]
     enable = true

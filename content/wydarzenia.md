@@ -2,8 +2,6 @@
 title = "Wydarzenia"
 type = "page"
 description = "Nadchodzące wyjazdy, turnieje i szkolenia"
-[menu.main]
-weight = 5
 +++
 
 Poniżej przedstawiamy najbliższe wydarzenia związane z działalnością Rebel Fencing. Terminy mogą ulec zmianie – śledź nasze aktualności.

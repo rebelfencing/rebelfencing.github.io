@@ -8,7 +8,8 @@ weight = 3
 
 ## Tomasz Kraśnicki
 
-![Tomasz Kraśnicki](/img/kadra/tomasz.jpg)
+{{< figure src="/img/kadra/tomasz.jpg" title="Tomasz Kraśnicki" class="img-responsive">}}
+
 
 - **Data urodzenia**: 29 września 1985  
 - **Wykształcenie**: dr n. med., mgr fizyki medycznej (Uniwersytet Wrocławski)  
@@ -20,7 +21,7 @@ Absolwent Uniwersytetu Wrocławskiego (Wydział Fizyki i Astronomii) oraz Wydzia
 
 ## Magdalena Jurczyk
 
-![Magdalena Jurczyk](/img/kadra/magda.jpg)
+{{< figure src="/img/kadra/magda.jpg" title="Magdalena Jurczyk" class="img-responsive">}}
 
 - **Data urodzenia**: 30 września 2001  
 - **Wykształcenie**: studentka (Media Kreatywne – Animacja 3D i VFX)  
@@ -33,7 +34,7 @@ Wielokrotna medalistka w kategorii kobiecej na rapier z lewakiem; zwyciężczyni
 
 ## Filip Grygorczuk
 
-![Filip Grygorczuk](/img/kadra/filip.jpg)
+{{< figure src="/img/kadra/filip.jpg" title="Filip Grygorczuk" class="img-responsive">}}
 
 
 - **Data urodzenia**: 17 lipca 1995  

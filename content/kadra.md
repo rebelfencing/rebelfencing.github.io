@@ -8,7 +8,7 @@ weight = 3
 
 ## Tomasz Kraśnicki
 
-![Tomasz Kraśnicki](/rebelfencing/img/kadra/tomasz.jpg)
+![Tomasz Kraśnicki](/img/kadra/tomasz.jpg)
 
 - **Data urodzenia**: 29 września 1985  
 - **Wykształcenie**: dr n. med., mgr fizyki medycznej (Uniwersytet Wrocławski)  
@@ -20,7 +20,7 @@ Absolwent Uniwersytetu Wrocławskiego (Wydział Fizyki i Astronomii) oraz Wydzia
 
 ## Magdalena Jurczyk
 
-![Magdalena Jurczyk](/rebelfencing/img/kadra/magda.jpg)
+![Magdalena Jurczyk](/img/kadra/magda.jpg)
 
 - **Data urodzenia**: 30 września 2001  
 - **Wykształcenie**: studentka (Media Kreatywne – Animacja 3D i VFX)  
@@ -33,7 +33,7 @@ Wielokrotna medalistka w kategorii kobiecej na rapier z lewakiem; zwyciężczyni
 
 ## Filip Grygorczuk
 
-![Filip Grygorczuk](/rebelfencing/img/kadra/filip.jpg)
+![Filip Grygorczuk](/img/kadra/filip.jpg)
 
 
 - **Data urodzenia**: 17 lipca 1995  

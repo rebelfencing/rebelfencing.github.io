@@ -4,6 +4,7 @@ tags = ["turnieje", "zawody"]
 categories = ["turnieje", "swordmaster's cup"]
 date = "2025-09-04T00:00:00+01:00"
 banner = "img/swordmasters_cup.png"
+url = "/blog/2025/09/04/swordmaster2025/"
 +++
 
 Tutaj znajdziesz informacje o nadchodzących turniejach Swordmaster's Cup w 2025 roku!

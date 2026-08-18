@@ -44,25 +44,30 @@ pluralizelisttitles = false
     weight     = 4
 
 [[menu.main]]
+    name       = "Kadra"
+    url        = "/kadra/"
+    weight     = 5
+
+[[menu.main]]
     name       = "Wydarzenia"
     url        = ""
-    weight     = 5
+    weight     = 6
     identifier = "menu.events"
 
 [[menu.main]]
     name       = "Lista wydarzeń"
     url        = "/wydarzenia/"
-    weight     = 6
+    weight     = 7
     identifier = "menu.event_list"
     parent     = "menu.events"
 
 
 [[menu.main]]
-    name       = "Swordmaster Cup"
+    name       = "Swordmaster's Cup"
     url        = "/swordmasters_cup/"
     identifier = "menu.swordmaster_cup"
     parent     = "menu.events"
-    weight     = 7
+    weight     = 8
 
 [[menu.main]]
     name       = "Blog"
@@ -150,7 +155,7 @@ pluralizelisttitles = false
     copyright = "© Rebel Fencing"
 
     # Format dates with Go's time formatting
-    date_format = "January 2, 2006"
+    date_format = "2 January 2006"
 
     dropdown_mouse_over = false
 
@@ -162,9 +167,8 @@ pluralizelisttitles = false
 
     logo_small = "img/rebel-logo-small.jpg"
     address = """<p class="text-uppercase"><strong>Rebel Fencing</strong>
-        <br>Piotra Skargi 31, Wroclaw, Poland
-        <br>Wrocław
-        <br>50-450
+        <br>ul. Piotra Skargi 31
+        <br>50-450 Wrocław
         <br>
         <strong>Polska</strong>
       </p>

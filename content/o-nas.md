@@ -2,11 +2,9 @@
 title = "O nas"
 type = "page"
 description = "Rebel Fencing – szkoła szermierki klasycznej we Wrocławiu"
-[menu.main]
-weight = 1
 +++
 
-Rebel Fencing to szkoła fechtunku z siedzibą we Wrocławiu. Uczymy szermierki klasycznej – efektywnej, bezpiecznej i opartej na źródłach sztuki walki bronią białą. Nasz program obejmuje pracę z trzema głównymi rodzajami broni:
+Rebel Fencing to szkoła fechtunku z siedzibą we Wrocławiu. Uczymy szermierki klasycznej – efektywnej, bezpiecznej i opartej na źródłach sztuki walki bronią białą. Nasz program obejmuje pracę z czterema głównymi rodzajami broni:
 
 - szpadą dworską,
 - szablą pojedynkową oraz ciężką,

@@ -1,27 +1,309 @@
-.home-carousel {
-    position: relative;
-    background: url('../img/background.jpg') center center repeat;
-    background-size: cover;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
+/* ==========================================================================
+   Rebel Fencing – nadpisania motywu "universal"
+   Kolor marki zmienisz w jednym miejscu: --primary-accent poniżej.
+   ========================================================================== */
 
-  table {
-    border-collapse: collapse;
-    width: 100%;
+:root {
+  --primary-accent: #a3232b;   /* rebelska czerwień */
+  --navbar-border-top: #a3232b;
+  --rf-ink: #23262b;           /* stal / tekst */
+  --rf-muted: #6b7280;
+}
+
+/* --- Hero / karuzela ------------------------------------------------------ */
+
+.home-carousel {
+  position: relative;
+  background: url('../img/background.jpg') center center no-repeat;
+  background-size: cover;
+  transition: all 0.2s ease-out;
+}
+
+/* zamiast płaskiej plamy koloru – ciemny gradient, zdjęcie zostaje widoczne */
+.home-carousel .dark-mask {
+  background: linear-gradient(180deg, rgba(15, 17, 20, 0.82) 0%, rgba(15, 17, 20, 0.62) 45%, rgba(15, 17, 20, 0.88) 100%);
+  opacity: 1;
+  filter: none;
+}
+
+.home-carousel h1 {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+.home-carousel h1::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 3px;
+  margin: 18px 0 0;
+  background: var(--primary-accent);
+}
+
+@media (min-width: 992px) {
+  .home-carousel .right h1::after { margin-left: auto; }
+}
+
+@media (max-width: 991px) {
+  .home-carousel .right h1::after { margin: 18px auto 0; }
+}
+
+.home-carousel p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.home-carousel img {
+  border-radius: 6px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+/* --- Menu ----------------------------------------------------------------- */
+
+/* Motyw podkreśla wszystkie pozycje menu – wygląda jak surowy HTML. */
+.navbar ul.nav > li > a {
+  text-decoration: none;
+}
+
+/* Rozwijane menu: motyw animuje je jQuery (slideUp/slideDown), przez co przy
+   przerwanej animacji lub zmianie szerokości okna zostaje inline'owy
+   display i menu potrafi się „zaciąć”. Sterujemy widocznością wyłącznie
+   klasą .open / hoverem – stąd !important. */
+@media (min-width: 768px) {
+  .navbar .nav > li.dropdown > .dropdown-menu {
+    display: none !important;
+    height: auto !important;
   }
-  
-  tr:nth-child(odd) {
-    background-color: #f9f9f9;
+  .navbar .nav > li.dropdown.open > .dropdown-menu,
+  .navbar .nav > li.dropdown:hover > .dropdown-menu {
+    display: block !important;
   }
-  
-  tr:nth-child(even) {
-    background-color: #ffffff;
-  }
-  
-  td {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    padding: 0.6rem;
-  }
+}
+
+.navbar .dropdown-menu {
+  min-width: 220px;
+  padding: 4px 0;
+  border: none;
+  border-top: 3px solid var(--primary-accent);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.navbar ul.dropdown-menu li {
+  border-bottom: none;
+  padding: 0;
+}
+
+.navbar ul.dropdown-menu li a {
+  padding: 10px 20px;
+  font-size: 12px;
+  white-space: nowrap;
+  color: #555;
+}
+
+.navbar ul.dropdown-menu li a:hover {
+  background: #f5f6f7;
+  color: var(--primary-accent);
+}
+
+/* --- Typografia treści ---------------------------------------------------- */
+
+#content {
+  padding-top: 30px;
+}
+
+#content p,
+#content li {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--rf-ink);
+}
+
+#content h1,
+#content h2,
+#content h3,
+#content h4 {
+  color: var(--rf-ink);
+  letter-spacing: 0.02em;
+}
+
+#content h2 {
+  margin-top: 48px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e8ea;
+}
+
+#content h3 {
+  margin-top: 36px;
+}
+
+#content h2 + p,
+#content h3 + p {
+  margin-top: 12px;
+}
+
+#content blockquote {
+  border-left: 4px solid var(--primary-accent);
+  background: #fafafa;
+  padding: 18px 24px;
+  font-style: italic;
+  color: #444;
+}
+
+#content hr {
+  margin: 48px 0;
+  border-top: 1px solid #e6e8ea;
+}
+
+#content a {
+  color: var(--primary-accent);
+}
+
+#content a:hover {
+  color: #7d1a20;
+}
+
+/* --- Zdjęcia -------------------------------------------------------------- */
+
+#content figure {
+  margin: 24px 0 32px;
+}
+
+#content figure img {
+  border-radius: 6px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.14);
+  max-width: 100%;
+  height: auto;
+}
+
+#content figure figcaption {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--rf-muted);
+}
+
+/* --- Tabele --------------------------------------------------------------- */
+
+#content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 24px 0;
+  font-size: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+#content thead th {
+  background: var(--rf-ink);
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem 0.8rem;
+  font-weight: 600;
+  border: none;
+}
+
+#content tbody tr:nth-child(odd) { background-color: #fafbfc; }
+#content tbody tr:nth-child(even) { background-color: #ffffff; }
+#content tbody tr:hover { background-color: #fdf3f3; }
+
+#content td {
+  border-top: 1px solid #e6e8ea;
+  border-bottom: 1px solid #e6e8ea;
+  padding: 0.7rem 0.8rem;
+}
+
+/* wąskie ekrany: tabela przewija się zamiast rozpychać stronę */
+@media (max-width: 767px) {
+  #content table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+/* --- Kafelki wpisów na stronie głównej ------------------------------------ */
+
+.box-image-text {
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+  height: 100%;
+  background: #fff;
+}
+
+.box-image-text:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.box-image-text .top .image img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.box-image-text .content {
+  padding: 16px 18px 20px;
+}
+
+.box-image-text .content h4 {
+  margin-top: 0;
+  min-height: 46px;
+}
+
+.box-image-text .content h4 a {
+  color: var(--rf-ink);
+}
+
+.box-image-text .content h4 a:hover {
+  color: var(--primary-accent);
+}
+
+/* --- Przyciski ------------------------------------------------------------ */
+
+.btn {
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+}
+
+/* --- Szerokość kolumny treści --------------------------------------------- */
+
+/* Pełna szerokość kontenera daje na dużych ekranach ~140 znaków w wierszu –
+   za dużo, żeby to wygodnie czytać. */
+#content .container > .row > .col-md-12 {
+  max-width: 880px;
+  margin: 0 auto;
+  float: none;
+}
+
+/* --- Podpisy pod zdjęciami ------------------------------------------------ */
+
+#content figure figcaption h4 {
+  margin: 10px 0 0;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--rf-muted);
+}
+
+/* --- Drobne poprawki hero ------------------------------------------------- */
+
+.home-carousel { overflow: hidden; }
+
+/* mocniejsze przyciemnienie tła hero – opisy muszą być czytelne */
+.home-carousel .dark-mask {
+  background: linear-gradient(180deg, rgba(12, 14, 17, 0.9) 0%, rgba(12, 14, 17, 0.78) 45%, rgba(12, 14, 17, 0.92) 100%);
+}
+
+ /* sąsiedni slajd potrafi „wystawać” poza kadr */
+.home-carousel .owl-wrapper-outer { overflow: hidden; }
+
+/* opisy slajdów to goły tekst (bez <p>), więc kolor ustawiamy na kolumnie */
+.home-carousel .item,
+.home-carousel .item .row > div,
+.home-carousel .item p,
+.home-carousel .item ul {
+  color: #fff;
+}
+
+/* ujemne marginesy .row wystawały poza kadr slajdu i ucinały tekst */
+.home-carousel .item .row {
+  margin-left: 0;
+  margin-right: 0;
+}

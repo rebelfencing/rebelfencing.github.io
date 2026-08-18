@@ -1,0 +1,42 @@
+# Nadpisania tłumaczeń motywu (themes/universal/i18n/pl.yaml).
+# Nazwy miesięcy w dopełniaczu, żeby daty czytały się „18 sierpnia 2026”
+# (motyw podstawia je do formatu date_format zdefiniowanego w hugo.toml).
+
+- id: portedBy
+  translation: "Przeniesiony na Hugo przez"
+
+- id: January
+  translation: stycznia
+
+- id: February
+  translation: lutego
+
+- id: March
+  translation: marca
+
+- id: April
+  translation: kwietnia
+
+- id: May
+  translation: maja
+
+- id: June
+  translation: czerwca
+
+- id: July
+  translation: lipca
+
+- id: August
+  translation: sierpnia
+
+- id: September
+  translation: września
+
+- id: October
+  translation: października
+
+- id: November
+  translation: listopada
+
+- id: December
+  translation: grudnia

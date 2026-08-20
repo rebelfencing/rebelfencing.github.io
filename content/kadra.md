@@ -40,4 +40,4 @@ Wielokrotna medalistka w kategorii kobiecej na rapier z lewakiem; zwyciężczyni
 - **Ulubiona broń**: szpada  
 
 
-Szermierką zajmuje się od 2019 r., instruktor od 2022 r. W 2023 r. ukończył kurs instruktorski na AWF w Katowicach u dra Michała Morysa. W 2025 r. prowadził zielonogórską grupę szabli historycznej. W Rebel Fencing regularnie prowadzi zajęcia, lekcje indywidualne oraz warsztaty. Wielokrotny medalista zawodów w szpadzie dworskiej, srebrny medalista w rapierze z płaszczem. Zawodowo team leader i specjalista ds. informacji technicznej. Pasjonat muzyki, literatury, gór, wędkarstwa oraz wszelkiej aktywności fizycznej; gitarzysta w zespole „Zaratan”.
+Szermierką zajmuje się od 2019 r., instruktor od 2022 r. W 2023 r. ukończył kurs instruktorski na AWF w Katowicach u dra Michała Morysa. W 2025 r. prowadził zielonogórską grupę szabli historycznej. W Rebel Fencing regularnie prowadzi zajęcia, lekcje indywidualne oraz warsztaty. Wielokrotny medalista zawodów w szpadzie dworskiej, srebrny medalista w rapierze z płaszczem. Pasjonat muzyki, literatury, gór, oraz wszelkiej aktywności fizycznej.

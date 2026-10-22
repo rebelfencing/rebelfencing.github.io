@@ -4,6 +4,12 @@ type = "page"
 description = "Grafik zajęć i informacje organizacyjne"
 +++
 
+### Darmowy trening próbny
+
+Pierwszy trening w Rebel Fencing jest darmowy ⚔️ Przyjdź, spróbuj i przekonaj się, czy szermierka klasyczna jest dla Ciebie.
+
+👉 **[Zapisz się na trening próbny](https://forms.gle/1jVCyH6sWgMWk9XDA)** – wystarczy wypełnić formularz.
+
 ### Lokalizacja
 
 **LO IX, ul. ks. Piotra Skargi 31, Wrocław**

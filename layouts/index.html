@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+  <head>
+    {{ partial "headers.html" . }}
+    {{ partial "custom_headers.html" . }}
+  </head>
+
+  <body>
+
+    <div id="all">
+
+        {{ partial "top.html" . }}
+
+        {{ partial "nav.html" . }}
+
+        <section class="trial-banner no-mb">
+            <div class="container">
+                <p><strong>Pierwszy trening w Rebel Fencing jest darmowy ⚔️</strong> Przyjdź i spróbuj szermierki klasycznej!</p>
+                <a class="btn trial-banner-btn" href="https://forms.gle/1jVCyH6sWgMWk9XDA" target="_blank" rel="noopener">Zapisz się na trening próbny</a>
+            </div>
+        </section>
+
+        {{ partial "carousel.html" . }}
+
+        {{ partial "features.html" . }}
+
+        {{ partial "testimonials.html" . }}
+
+        {{ partial "see_more.html" . }}
+
+        {{ partial "recent_posts.html" . }}
+
+        {{ partial "clients.html" . }}
+
+        {{ partial "footer.html" . }}
+
+    </div>
+    <!-- /#all -->
+
+    {{ partial "scripts.html" . }}
+
+  </body>
+</html>

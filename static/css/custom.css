@@ -307,3 +307,38 @@
   margin-left: 0;
   margin-right: 0;
 }
+
+/* --- Pasek „darmowy trening próbny” na stronie głównej -------------------- */
+
+.trial-banner {
+  background: var(--primary-accent);
+  color: #fff;
+  padding: 14px 0;
+}
+
+.trial-banner .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 24px;
+  text-align: center;
+}
+
+.trial-banner p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.trial-banner .trial-banner-btn {
+  background: #fff;
+  color: var(--primary-accent);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.trial-banner .trial-banner-btn:hover,
+.trial-banner .trial-banner-btn:focus {
+  background: var(--rf-ink);
+  color: #fff;
+}
